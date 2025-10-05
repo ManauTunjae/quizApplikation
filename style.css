@@ -23,41 +23,39 @@ footer {
   color: #fff;
   padding: 1rem 0;
   text-align: center;
+  box-shadow: 5px 0px 10px rgba(88, 81, 81, 0.879),
+    -5px 0px 10px rgba(88, 81, 81, 0.879);
 }
 
 main {
   flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 1rem;
 }
 
 .main-container {
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-    gap: 1rem;
-}
-
-.quiz-section {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1rem;
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
+}
+
+.quiz-section {
   display: flex;
   flex-direction: column;
 }
 
 .quiz-section h2 {
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .quiz-container {
@@ -101,28 +99,47 @@ button:hover {
   background-color: #555;
 }
 
-.result-section {
-  background: #fff;
-  padding: 1rem;
+button:active {
+  transform: translateY(2px);
+}
+
+#start-quiz {
+  width: 40%;
+}
+.point-section {
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
+  
+}
+.point-container h2 {
+  margin-bottom: 1rem;
+}
+.point-container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Fråga sektion */
+/*-------------- Fråga sektion --------------*/
 
-.fråga-container{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    min-width: 650px;
-    background-color: #fff;
-    box-shadow:     0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    line-height: 1.6;
+.fråga-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  min-width: 450px;
+  width: 100%;
+  max-width: 960px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  line-height: 1.6;
 }
 
 .faq-section {
@@ -133,11 +150,20 @@ button:hover {
 .faq-item {
   margin-bottom: 1rem;
 }
+.faq-item h2 {
+  margin-bottom: 2rem;
+}
 
 .select {
   margin-bottom: 1rem;
   width: 100%;
-    padding: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  display: flex;
+  gap: 12px;
+}
+.select label {
+  flex: 1;
 }
 
 .select:hover {
@@ -145,27 +171,47 @@ button:hover {
 }
 
 .btn-container {
-    display: flex;
-    justify-content: end;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+.submit-btn {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/*-------------- Fråga sektion --------------*/
+
+/*-------------- Resultat sektion --------------*/
+
+.result-section {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  min-width: 650px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  line-height: 1.6;
+  margin: 3rem auto;
+  font-size: 1.5rem;
+  width: 80% ;
+  max-width: 960px;
+  flex: 1;
+  min-height: 50vh;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
 }
 
-/* Resultat sektion */
-
-.point-result{
-    align-items: center;
-    min-width: 650px;
-    background-color: #fff;
-    box-shadow:     0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    line-height: 1.6;
-    margin: 3rem;
-    font-size: 1.5rem;
+.resultat {
+   flex: 1;
 }
 
 .btn-restart {
-    display: flex;
-    justify-content: end;
-    margin-right: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+
 }

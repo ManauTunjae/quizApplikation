@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Application</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-</head>
-<body>
-    <header class="resultat">
-        <h2>Resultatet</h2>
+  </head>
+  <body>
+    <header class="resultat-header">
+      <h2>Resultatet</h2>
     </header>
-    <section class="point-result">
-        <h3>GRATTIS!</h3>
-        <h5 class="point">Du får:</h5>
-    <div class="btn-restart">
-        <button class="submit-btn">Börja om</button>
-    </div>
-    </section>
-</body>
+    <main>
+      <div>
+        <section class="result-section">
+            <div class="resultat">
+                <h3>Resultatet!</h3>
+                <h5 class="point">Du får: <span> 5 av 5 </span></h5>
+            </div>
+          
+          <div class="btn-restart">
+            <button class="submit-btn">Spela igen</button>
+            <button class="submit-btn">Till startsidan</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
