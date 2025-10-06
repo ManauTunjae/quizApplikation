@@ -11,64 +11,13 @@
     <header>
       <h1>Välkommen till Quizapplikationen</h1>
     </header>
-    <main>
-      <div class="main-container">
-        <section class="quiz-section">
-          <h2>Testa dina kunskaper!</h2>
-          <div class="quiz-container">
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Ange ditt namn"
-            />
-            <select name="catigory" id="catigoryselct">
-              <option value="">Kategori</option>
-              <option value="programmering">programmering</option>
-              <option value="history">history</option>
-              <option value="geografi">geografi</option>
-            </select>
-            <input
-              type="number"
-              min="5"
-              max="20"
-              name="number"
-              id="frågorantal"
-              placeholder="Antal frågor"
-            />
-            <div>
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              <label for="checkbox"
-                > Aktivera timer per fråga</label
-              >
-            </div>
-            <input
-              type="number"
-              min="10"
-              max="120"
-              name="number"
-              id="frågaorlimit"
-              placeholder="Tidsgräns i sekunder"
-            />
-          </div>
-          <button id="start-quiz">Starta Quiz</button>
-        </section>
-        <section class="point-section">
-          <div class="point-container">
-            <h2>Högsta poäng</h2>
-            <div class="">
-              <p id="result-text"><strong>programiring: </strong> 4/5 (80%)</p>
-              <p id="result-text"><strong>history: </strong> 4/5 (80%)</p>
-              <p id="result-text"><strong>geografi: </strong> 4/5 (80%)</p>
-              <p id="result-text"><strong>matematik: </strong> 4/5 (80%)</p>
-            </div>
-          </div>
-        </section>
-      </div>
+    <main id="main">
+        
     </main>
     <footer>
+                    <input  type="radio" id="alt${index + 1}" name="question${state.currentIndex + 1}" value="alt${index + 1}" />
+
       footer
-      <a href="frågor.html">frågor</a>
     </footer>
   </body>
 </html>
