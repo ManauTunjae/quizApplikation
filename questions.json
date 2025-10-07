@@ -1,0 +1,105 @@
+{
+    "Allmänbildning": [
+      {
+        "q": "Vilket land har störst befolkning i världen (2024)?",
+        "choices": ["Indien", "Kina", "USA", "Indonesien"],
+        "a": 0,
+        "explanation": "Indien passerade Kina runt 2023–2024."
+      },
+      {
+        "q": "Vilket år började andra världskriget?",
+        "choices": ["1937", "1939", "1941", "1945"],
+        "a": 1
+      },
+      {
+        "q": "Vad heter Sveriges huvudstad?",
+        "choices": ["Göteborg", "Stockholm", "Malmö", "Uppsala"],
+        "a": 1
+      },
+      {
+        "q": "Vilken planet kallas den röda planeten?",
+        "choices": ["Mars", "Venus", "Jupiter", "Saturnus"],
+        "a": 0
+      },
+      {
+        "q": "Vem skrev 'Romeo och Julia'?",
+        "choices": ["Shakespeare", "Dante", "Cervantes", "Goethe"],
+        "a": 0
+      },
+      {
+        "q": "Vilket grundämne har kemisk beteckning O?",
+        "choices": ["Syre", "Guld", "Kväve", "Kol"],
+        "a": 0
+      }
+    ],
+    "Programmering": [
+      {
+        "q": "Vilket språk används för webbsidans struktur?",
+        "choices": ["CSS", "JavaScript", "HTML", "Python"],
+        "a": 2
+      },
+      {
+        "q": "Vilken metod lägger till en sista post i en JS-array?",
+        "choices": ["push()", "pop()", "shift()", "unshift()"],
+        "a": 0
+      },
+      {
+        "q": "Vad betyder 'CSS'?",
+        "choices": ["Coded Style Sheets", "Cascading Style Sheets", "Computer Style Syntax", "Creative Styles"],
+        "a": 1
+      },
+      {
+        "q": "Vilket av dessa är ett versionshanteringssystem?",
+        "choices": ["Docker", "Git", "Node", "React"],
+        "a": 1
+      },
+      {
+        "q": "Vilket format används ofta för API-data?",
+        "choices": ["XML", "TXT", "JSON", "CSV"],
+        "a": 2
+      },
+      {
+        "q": "Vilken operator används för strikt likhet i JavaScript?",
+        "choices": ["=", "==", "===", "!=="],
+        "a": 2
+      }
+    ],
+    "prog": [
+      {
+        "q": "Vilket språk används för webbsidans struktur?",
+        "choices": ["CSS", "JavaScript", "HTML", "Python"],
+        "a": 2
+      },
+      {
+        "q": "Vilken metod lägger till en sista post i en JS-array?",
+        "choices": ["push()", "pop()", "shift()", "unshift()"],
+        "a": 0
+      },
+      {
+        "q": "Vilken metod lägger till en sista post i en JS-array?",
+        "choices": ["push()", "pop()", "shift()", "unshift()"],
+        "a": 0
+      },
+      {
+        "q": "Vad betyder 'CSS'?",
+        "choices": ["Coded Style Sheets", "Cascading Style Sheets", "Computer Style Syntax", "Creative Styles"],
+        "a": 1
+      },
+      {
+        "q": "Vilket av dessa är ett versionshanteringssystem?",
+        "choices": ["Docker", "Git", "Node", "React"],
+        "a": 1
+      },
+      {
+        "q": "Vilket format används ofta för API-data?",
+        "choices": ["XML", "TXT", "JSON", "CSV"],
+        "a": 2
+      },
+      {
+        "q": "Vilken operator används för strikt likhet i JavaScript?",
+        "choices": ["=", "==", "===", "!=="],
+        "a": 2
+      }
+    ]
+  }
+  
