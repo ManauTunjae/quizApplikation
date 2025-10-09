@@ -1,4 +1,3 @@
-/* Startsidan section */
 
 * {
   margin: 0;
@@ -8,6 +7,7 @@
 
 :root {
   --bg: #f4f4f4;
+  --text: #522c2c;
   --card: #fff;
   --primary: #333;
   --accent: #7c3aed;
@@ -18,9 +18,13 @@
   --radius: 12px;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   background-color: var(--bg);
   color: var(--primary);
@@ -29,6 +33,7 @@ body {
   min-height: 100vh;
 }
 
+/* Startsidan section */
 header,
 footer {
   background-color: var(--primary);
@@ -82,16 +87,13 @@ input[type="text"],
 input[type="number"],
 select {
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--primary);
   border-radius: 5px;
   width: 100%;
+  
 }
 
-select {
-  background-color: var(--card);
-  height: 2rem;
-  background-position: right 0.7rem center;
-}
+
 
 input[type="checkbox"] {
   margin-right: 0.5rem;
@@ -104,18 +106,18 @@ button {
   padding: 0.7rem;
   border: none;
   border-radius: 5px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--card);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-#timelimit {
+#timesec {
   display: none;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: var(--muted);
 }
 
 button:active {
@@ -131,6 +133,8 @@ button:active {
   width: 100%;
   display: flex;
   flex-direction: column;
+  max-height: 60vh;
+  overflow: auto;
 }
 
 #category-title::after {
@@ -144,7 +148,7 @@ button:active {
   background: var(--card);
   border-radius: 10px;
   padding: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*-------------- Fråga sektion --------------*/
@@ -162,6 +166,8 @@ button:active {
   padding: 1rem 2rem;
   border-radius: 10px;
   line-height: 1.6;
+  position: relative;
+  overflow: hidden;
 }
 
 .faq-section {
@@ -188,7 +194,7 @@ button:active {
 }
 
 .frågor-sec {
-  box-shadow: #555 0px 0px 10px;
+  box-shadow: var(--muted) 0px 0px 10px;
   padding: 0.5rem;
   border-radius: 5px;
   text-align: start;
@@ -270,7 +276,7 @@ button:active {
 }
 
 .category {
-  background: #f9f9f9;
+  background: var(--bg);
   margin-bottom: 15px;
   padding: 4px 12px;
   border-radius: 10px;
@@ -289,19 +295,22 @@ button:active {
 .scores li {
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  background: var(--card);
   margin-bottom: 5px;
   padding: 8px 12px;
   border-radius: 8px;
   transition: transform 0.2s;
+  
 }
 
 .scores li:hover {
-  transform: scale(1.02);
+  transform: scale(0.98);
+  border: 1px solid var(--muted);
 }
 
 .rank {
   font-weight: bold;
+  margin-right: 5px;
   color: #666;
 }
 
@@ -351,4 +360,58 @@ button:active {
 .frågor-sec.disabled {
   pointer-events: none;
   opacity: 0.6;
+}
+
+
+
+/* progress bar section */
+#progressBarContainer {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#progressBar {
+  height: 100%;
+  background-color: #6abf6c;
+  width: 100%;
+  transition: width 1s linear;
+  border-radius: 5px;
+}
+
+#timer {
+  color: var(--card);
+  background-color: var(--primary);
+  border-radius: 12px;
+  padding: 5px;
+  position: relative;
+  right: -30px;
+}
+
+
+
+#colorPicker {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.correct-list-item {
+  background-color: var(--bg);
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.expanation {
+
 }

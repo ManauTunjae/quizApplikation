@@ -1,105 +1,1192 @@
 {
-    "Allmänbildning": [
-      {
-        "q": "Vilket land har störst befolkning i världen (2024)?",
-        "choices": ["Indien", "Kina", "USA", "Indonesien"],
-        "a": 0,
-        "explanation": "Indien passerade Kina runt 2023–2024."
-      },
-      {
-        "q": "Vilket år började andra världskriget?",
-        "choices": ["1937", "1939", "1941", "1945"],
-        "a": 1
-      },
-      {
-        "q": "Vad heter Sveriges huvudstad?",
-        "choices": ["Göteborg", "Stockholm", "Malmö", "Uppsala"],
-        "a": 1
-      },
-      {
-        "q": "Vilken planet kallas den röda planeten?",
-        "choices": ["Mars", "Venus", "Jupiter", "Saturnus"],
-        "a": 0
-      },
-      {
-        "q": "Vem skrev 'Romeo och Julia'?",
-        "choices": ["Shakespeare", "Dante", "Cervantes", "Goethe"],
-        "a": 0
-      },
-      {
-        "q": "Vilket grundämne har kemisk beteckning O?",
-        "choices": ["Syre", "Guld", "Kväve", "Kol"],
-        "a": 0
-      }
-    ],
-    "Programmering": [
-      {
-        "q": "Vilket språk används för webbsidans struktur?",
-        "choices": ["CSS", "JavaScript", "HTML", "Python"],
-        "a": 2
-      },
-      {
-        "q": "Vilken metod lägger till en sista post i en JS-array?",
-        "choices": ["push()", "pop()", "shift()", "unshift()"],
-        "a": 0
-      },
-      {
-        "q": "Vad betyder 'CSS'?",
-        "choices": ["Coded Style Sheets", "Cascading Style Sheets", "Computer Style Syntax", "Creative Styles"],
-        "a": 1
-      },
-      {
-        "q": "Vilket av dessa är ett versionshanteringssystem?",
-        "choices": ["Docker", "Git", "Node", "React"],
-        "a": 1
-      },
-      {
-        "q": "Vilket format används ofta för API-data?",
-        "choices": ["XML", "TXT", "JSON", "CSV"],
-        "a": 2
-      },
-      {
-        "q": "Vilken operator används för strikt likhet i JavaScript?",
-        "choices": ["=", "==", "===", "!=="],
-        "a": 2
-      }
-    ],
-    "prog": [
-      {
-        "q": "Vilket språk används för webbsidans struktur?",
-        "choices": ["CSS", "JavaScript", "HTML", "Python"],
-        "a": 2
-      },
-      {
-        "q": "Vilken metod lägger till en sista post i en JS-array?",
-        "choices": ["push()", "pop()", "shift()", "unshift()"],
-        "a": 0
-      },
-      {
-        "q": "Vilken metod lägger till en sista post i en JS-array?",
-        "choices": ["push()", "pop()", "shift()", "unshift()"],
-        "a": 0
-      },
-      {
-        "q": "Vad betyder 'CSS'?",
-        "choices": ["Coded Style Sheets", "Cascading Style Sheets", "Computer Style Syntax", "Creative Styles"],
-        "a": 1
-      },
-      {
-        "q": "Vilket av dessa är ett versionshanteringssystem?",
-        "choices": ["Docker", "Git", "Node", "React"],
-        "a": 1
-      },
-      {
-        "q": "Vilket format används ofta för API-data?",
-        "choices": ["XML", "TXT", "JSON", "CSV"],
-        "a": 2
-      },
-      {
-        "q": "Vilken operator används för strikt likhet i JavaScript?",
-        "choices": ["=", "==", "===", "!=="],
-        "a": 2
-      }
-    ]
-  }
-  
+  "Allmänbildning": [
+    {
+      "q": "Vilket land har störst befolkning i världen (2024)?",
+      "choices": ["Indien", "Kina", "USA", "Indonesien"],
+      "a": 0,
+      "explanation": "Indien passerade Kina 2023"
+    },
+    {
+      "q": "Vilket år började andra världskriget?",
+      "choices": ["1937", "1939", "1941", "1945"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vad heter Sveriges huvudstad?",
+      "choices": ["Göteborg", "Stockholm", "Malmö", "Uppsala"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken planet kallas den röda planeten?",
+      "choices": ["Mars", "Venus", "Jupiter", "Saturnus"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vem skrev 'Romeo och Julia'?",
+      "choices": ["Shakespeare", "Dante", "Cervantes", "Goethe"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket grundämne har kemisk beteckning O?",
+      "choices": ["Syre", "Guld", "Kväve", "Kol"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vad heter världens längsta flod?",
+      "choices": ["Nilen", "Amazonas", "Mississippi", "Yangtze"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken färg får du om du blandar blått och gult?",
+      "choices": ["Röd", "Grön", "Lila", "Orange"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Hur många dagar finns i ett skottår?",
+      "choices": ["364", "365", "366", "367"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket djur kallas 'människans bästa vän'?",
+      "choices": ["Katt", "Hund", "Häst", "Kanin"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken hav är störst i världen?",
+      "choices": ["Atlanten", "Indiska oceanen", "Stilla havet", "Ishavet"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk talas mest i världen?",
+      "choices": ["Engelska", "Mandarin", "Spanska", "Hindi"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Hur många kontinenter finns det?",
+      "choices": ["5", "6", "7", "8"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vad kallas ett djur som äter både växter och kött?",
+      "choices": ["Herbivor", "Karnivor", "Omnivor", "Rovdjur"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken metall används i elektriska kablar?",
+      "choices": ["Järn", "Koppar", "Silver", "Tenn"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket land ligger direkt väster om Sverige?",
+      "choices": ["Finland", "Norge", "Danmark", "Tyskland"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vad heter valutan i Storbritannien?",
+      "choices": ["Euro", "Dollar", "Pund", "Krona"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Hur många ben har en spindel?",
+      "choices": ["6", "8", "10", "12"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vad är huvudstaden i Frankrike?",
+      "choices": ["Berlin", "Rom", "Paris", "Madrid"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket instrument har tangenter och pedaler?",
+      "choices": ["Gitarr", "Piano", "Trummor", "Fiol"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket land är känt för pizzan?",
+      "choices": ["Frankrike", "Italien", "Spanien", "Grekland"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket år blev Sverige medlem i EU?",
+      "choices": ["1991", "1995", "2000", "2005"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken kontinent ligger Egypten på?",
+      "choices": ["Asien", "Afrika", "Europa", "Sydamerika"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vad heter jordens största ö?",
+      "choices": ["Grönland", "Madagaskar", "Borneo", "Island"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket djur är störst på jorden?",
+      "choices": ["Elefant", "Blåval", "Giraff", "Haj"],
+      "a": 1,
+      "explanation": ""
+    }
+  ],
+  "Programmering": [
+    {
+      "q": "Vilket språk används för webbsidans struktur?",
+      "choices": ["CSS", "JavaScript", "HTML", "Python"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken metod lägger till en sista post i en JS-array?",
+      "choices": ["push()", "pop()", "shift()", "unshift()"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vad betyder 'CSS'?",
+      "choices": [
+        "Coded Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style Syntax",
+        "Creative Styles"
+      ],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket av dessa är ett versionshanteringssystem?",
+      "choices": ["Docker", "Git", "Node", "React"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket format används ofta för API-data?",
+      "choices": ["XML", "TXT", "JSON", "CSV"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken operator används för strikt likhet i JavaScript?",
+      "choices": ["=", "==", "===", "!=="],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk körs på Node.js?",
+      "choices": ["Python", "JavaScript", "Ruby", "PHP"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket av dessa är ett frontend-ramverk?",
+      "choices": ["React", "Express", "Django", "Flask"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk används för databaser?",
+      "choices": ["SQL", "HTML", "CSS", "JavaScript"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vad betyder 'API'?",
+      "choices": [
+        "Application Programming Interface",
+        "Automatic Program Instruction",
+        "Applied Python Integration",
+        "Advanced Programming Idea"
+      ],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken metod tar bort sista elementet i en array?",
+      "choices": ["push()", "pop()", "shift()", "unshift()"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk är känt för maskininlärning?",
+      "choices": ["Python", "JavaScript", "PHP", "C++"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket av följande är ett databashanteringssystem?",
+      "choices": ["MySQL", "React", "Node", "HTML"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken metod används för att skriva ut i JS?",
+      "choices": ["console.log()", "print()", "echo()", "output()"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vad betyder 'JSON'?",
+      "choices": [
+        "Java Standard Output Notation",
+        "JavaScript Object Notation",
+        "JavaScript Output Node",
+        "Java Syntax Object Notation"
+      ],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk används för stil på webbsidor?",
+      "choices": ["CSS", "HTML", "Python", "Java"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk används för att göra webbsidor interaktiva?",
+      "choices": ["HTML", "CSS", "JavaScript", "SQL"],
+      "a": 2,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket är det mest populära programmeringsspråket 2024?",
+      "choices": ["Python", "C", "Pascal", "Fortran"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken typ av språk är Python?",
+      "choices": ["Komplierat", "Interpreted", "Maskinkod", "Assembly"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken metod används för att hitta index i en array?",
+      "choices": ["findIndex()", "indexOf()", "search()", "locate()"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vad används Git för?",
+      "choices": [
+        "Versionshantering",
+        "Textredigering",
+        "Serverhosting",
+        "Grafikdesign"
+      ],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilken metod används för att kopiera en array?",
+      "choices": ["copy()", "slice()", "splice()", "map()"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vad är ett loop i programmering?",
+      "choices": ["En funktion", "En repetition", "En variabel", "En operator"],
+      "a": 1,
+      "explanation": ""
+    },
+    {
+      "q": "Vad används HTML för?",
+      "choices": ["Strukturera webbsidor", "Styling", "Logik", "Databas"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk används för mobilappar på iOS?",
+      "choices": ["Swift", "JavaScript", "Python", "C#"],
+      "a": 0,
+      "explanation": ""
+    },
+    {
+      "q": "Vilket språk används på Android-appar?",
+      "choices": ["Kotlin", "HTML", "CSS", "PHP"],
+      "a": 0,
+      "explanation": ""
+    }
+  ],
+
+  "Sport": [
+    {
+      "q": "Vilken boll används i tennis?",
+      "choices": ["Fotboll", "Golfboll", "Tennisboll", "Basketboll"],
+      "a": 2,
+      "explanation": "Tennis spelas med en tennisboll."
+    },
+    {
+      "q": "Hur många spelare är det i ett fotbollslag?",
+      "choices": ["9", "10", "11", "12"],
+      "a": 2,
+      "explanation": "Ett fotbollslag har 11 spelare på planen."
+    },
+    {
+      "q": "Vilken sport spelar Zlatan Ibrahimovic?",
+      "choices": ["Ishockey", "Fotboll", "Golf", "Tennis"],
+      "a": 1,
+      "explanation": "Zlatan är en känd fotbollsspelare."
+    },
+    {
+      "q": "Vad kallas målet i ishockey?",
+      "choices": ["Nät", "Målbur", "Korg", "Hål"],
+      "a": 1,
+      "explanation": "I ishockey kallas målet för målbur."
+    },
+    {
+      "q": "Vilken färg har en tennisboll?",
+      "choices": ["Röd", "Blå", "Gul", "Vit"],
+      "a": 3,
+      "explanation": "Tennisbollar är traditionellt vita eller gula."
+    },
+    {
+      "q": "Vilket land är känt för sporten alpin skidåkning?",
+      "choices": ["Sverige", "Norge", "Schweiz", "Danmark"],
+      "a": 2,
+      "explanation": "Schweiz är känt för alpin skidåkning."
+    },
+    {
+      "q": "Vad heter Sveriges största idrottsevenemang?",
+      "choices": ["SM", "VM", "OS", "EM"],
+      "a": 0,
+      "explanation": "SM står för Svenska Mästerskapen."
+    },
+    {
+      "q": "Vilken sport utövas i en swimmingpool?",
+      "choices": ["Simning", "Löpning", "Cykling", "Boxning"],
+      "a": 0,
+      "explanation": "Simning utövas i en swimmingpool."
+    },
+    {
+      "q": "Vilket djur är symbol för långsam löpning?",
+      "choices": ["Hare", "Sköldpadda", "Örn", "Lejon"],
+      "a": 1,
+      "explanation": "Sköldpaddan symboliserar långsamhet."
+    },
+    {
+      "q": "Vilken boll är störst?",
+      "choices": ["Tennisboll", "Golfboll", "Basketboll", "Bordtennisboll"],
+      "a": 2,
+      "explanation": "Basketboll är störst av alternativen."
+    },
+    {
+      "q": "Vad heter den kända skidorten i Sverige?",
+      "choices": ["Åre", "Malmö", "Göteborg", "Stockholm"],
+      "a": 0,
+      "explanation": "Åre är en populär skidort."
+    },
+    {
+      "q": "Vilken sport använder klubba?",
+      "choices": ["Fotboll", "Tennis", "Golf", "Basket"],
+      "a": 2,
+      "explanation": "Golf spelas med klubbor."
+    },
+    {
+      "q": "Hur många perioder har en ishockeymatch?",
+      "choices": ["2", "3", "4", "5"],
+      "a": 1,
+      "explanation": "Ishockey har tre perioder."
+    },
+    {
+      "q": "Vilken färg har en fotboll?",
+      "choices": ["Röd", "Grön", "Svart-vit", "Blå"],
+      "a": 2,
+      "explanation": "Fotbollar är ofta svartvita."
+    },
+    {
+      "q": "Vad kallas en person som tränar ett lag?",
+      "choices": ["Domare", "Tränare", "Spelare", "Ledare"],
+      "a": 1,
+      "explanation": "Tränaren leder laget."
+    },
+    {
+      "q": "Vilken sport spelar LeBron James?",
+      "choices": ["Fotboll", "Tennis", "Basket", "Ishockey"],
+      "a": 2,
+      "explanation": "LeBron James är basketspelare."
+    },
+    {
+      "q": "Vad heter den viktigaste cupen i fotboll?",
+      "choices": ["VM", "SM", "Cup", "Seriespel"],
+      "a": 0,
+      "explanation": "VM (Världsmästerskapet) är viktigast."
+    },
+    {
+      "q": "Vilket land vann fotbolls-VM 2022?",
+      "choices": ["Sverige", "Brasilien", "Argentina", "Tyskland"],
+      "a": 2,
+      "explanation": "Argentina vann VM 2022."
+    },
+    {
+      "q": "Vad använder man för att simma?",
+      "choices": ["Skidor", "Simfötter", "Klubbor", "Boll"],
+      "a": 1,
+      "explanation": "Simfötter hjälper till att simma."
+    },
+    {
+      "q": "Vilken sport utövas på is?",
+      "choices": ["Tennis", "Fotboll", "Ishockey", "Golf"],
+      "a": 2,
+      "explanation": "Ishockey spelas på is."
+    },
+    {
+      "q": "Vad kallas mätaren i en sportmatch?",
+      "choices": ["Domare", "Spelare", "Tränare", "Publik"],
+      "a": 0,
+      "explanation": "Domaren dömer matchen."
+    },
+    {
+      "q": "Vilken boll är lättast?",
+      "choices": ["Basketboll", "Fotboll", "Bordtennisboll", "Bowlingboll"],
+      "a": 2,
+      "explanation": "Bordtennisboll är lättast."
+    },
+    {
+      "q": "Vilket djur är känt för snabb löpning?",
+      "choices": ["Sköldpadda", "Gepard", "Ko", "Gris"],
+      "a": 1,
+      "explanation": "Geparden är världens snabbaste djur."
+    },
+    {
+      "q": "Vad heter Sveriges herrlandslag i fotboll?",
+      "choices": ["Sverige", "Blågult", "Tre Kronor", "Landslaget"],
+      "a": 3,
+      "explanation": "Sveriges herrlandslag kallas 'Landslaget'."
+    },
+    {
+      "q": "Vilken sport har vinsten 'k.o.'?",
+      "choices": ["Tennis", "Fotboll", "Boxning", "Golf"],
+      "a": 2,
+      "explanation": "K.o. (knockout) används i boxning."
+    }
+  ],
+  "Film & Musik": [
+    {
+      "q": "Vem spelar huvudrollen i filmen 'The Matrix'?",
+      "choices": [
+        "Brad Pitt",
+        "Keanu Reeves",
+        "Tom Cruise",
+        "Leonardo DiCaprio"
+      ],
+      "a": 1,
+      "explanation": "Keanu Reeves spelar Neo i 'The Matrix'."
+    },
+    {
+      "q": "Vilket band sjöng 'Bohemian Rhapsody'?",
+      "choices": ["The Beatles", "Queen", "ABBA", "Rolling Stones"],
+      "a": 1,
+      "explanation": "'Bohemian Rhapsody' är en låt av Queen."
+    },
+    {
+      "q": "Vilket instrument har strängar?",
+      "choices": ["Trumma", "Gitarr", "Flöjt", "Trumpet"],
+      "a": 1,
+      "explanation": "Gitarr har strängar."
+    },
+    {
+      "q": "Vem är känd för låten 'Bad Guy'?",
+      "choices": ["Taylor Swift", "Billie Eilish", "Adele", "Beyoncé"],
+      "a": 1,
+      "explanation": "'Bad Guy' är en låt av Billie Eilish."
+    },
+    {
+      "q": "Vilken film handlar om en trollkarlsskola?",
+      "choices": ["Sagan om ringen", "Harry Potter", "Narnia", "Star Wars"],
+      "a": 1,
+      "explanation": "Harry Potter handlar om trollkarlsskolan Hogwarts."
+    },
+    {
+      "q": "Vilket år släppte ABBA 'Waterloo'?",
+      "choices": ["1970", "1974", "1980", "1985"],
+      "a": 1,
+      "explanation": "ABBA vann Eurovision med 'Waterloo' 1974."
+    },
+    {
+      "q": "Vem regisserade 'Titanic'?",
+      "choices": [
+        "Steven Spielberg",
+        "James Cameron",
+        "Christopher Nolan",
+        "Quentin Tarantino"
+      ],
+      "a": 1,
+      "explanation": "James Cameron regisserade 'Titanic'."
+    },
+    {
+      "q": "Vilket instrument spelar Mozart?",
+      "choices": ["Gitarr", "Piano", "Trumma", "Saxofon"],
+      "a": 1,
+      "explanation": "Mozart var pianist och kompositör."
+    },
+    {
+      "q": "Vilken svensk artist sjöng 'Dancing Queen'?",
+      "choices": ["Loreen", "ABBA", "Zara Larsson", "Robyn"],
+      "a": 1,
+      "explanation": "'Dancing Queen' är en låt av ABBA."
+    },
+    {
+      "q": "Vilken film vann Oscar för bästa film 2020?",
+      "choices": ["Parasite", "1917", "Joker", "Once Upon a Time in Hollywood"],
+      "a": 0,
+      "explanation": "'Parasite' vann Oscar för bästa film 2020."
+    },
+    {
+      "q": "Vem skrev 'Let It Be'?",
+      "choices": ["The Beatles", "Queen", "ABBA", "Rolling Stones"],
+      "a": 0,
+      "explanation": "'Let It Be' är en låt av The Beatles."
+    },
+    {
+      "q": "Vilket instrument har tangentbord?",
+      "choices": ["Piano", "Gitarr", "Trumma", "Flöjt"],
+      "a": 0,
+      "explanation": "Piano har tangentbord."
+    },
+    {
+      "q": "Vem spelar Iron Man i Marvel-filmerna?",
+      "choices": [
+        "Chris Hemsworth",
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo"
+      ],
+      "a": 1,
+      "explanation": "Robert Downey Jr. spelar Iron Man."
+    },
+    {
+      "q": "Vilken genre är låten 'Thriller'?",
+      "choices": ["Pop", "Rock", "Hip-hop", "Disco"],
+      "a": 0,
+      "explanation": "'Thriller' är en poplåt av Michael Jackson."
+    },
+    {
+      "q": "Vilken film handlar om en leksakspojke?",
+      "choices": ["Toy Story", "Shrek", "Finding Nemo", "The Incredibles"],
+      "a": 0,
+      "explanation": "Toy Story handlar om leksakspojken Woody."
+    },
+    {
+      "q": "Vem sjöng 'Shape of You'?",
+      "choices": ["Ed Sheeran", "Justin Bieber", "Shawn Mendes", "Post Malone"],
+      "a": 0,
+      "explanation": "'Shape of You' är en låt av Ed Sheeran."
+    },
+    {
+      "q": "Vilket år släpptes filmen 'Frozen'?",
+      "choices": ["2010", "2013", "2015", "2018"],
+      "a": 1,
+      "explanation": "'Frozen' släpptes 2013."
+    },
+    {
+      "q": "Vem vann Eurovision Song Contest 2023?",
+      "choices": ["Sverige", "Finland", "Italien", "Norge"],
+      "a": 1,
+      "explanation": "Sverige vann Eurovision 2023 med Loreen."
+    },
+    {
+      "q": "Vilket band har låten 'Hotel California'?",
+      "choices": ["The Eagles", "The Beatles", "Queen", "ABBA"],
+      "a": 0,
+      "explanation": "'Hotel California' är en låt av The Eagles."
+    },
+    {
+      "q": "Vem regisserade 'Pulp Fiction'?",
+      "choices": [
+        "Quentin Tarantino",
+        "Martin Scorsese",
+        "Steven Spielberg",
+        "Christopher Nolan"
+      ],
+      "a": 0,
+      "explanation": "Quentin Tarantino regisserade 'Pulp Fiction'."
+    },
+    {
+      "q": "Vilken artist är känd för låten 'Hello'?",
+      "choices": ["Adele", "Taylor Swift", "Beyoncé", "Rihanna"],
+      "a": 0,
+      "explanation": "'Hello' är en låt av Adele."
+    },
+    {
+      "q": "Vilken film handlar om en superhjälte i Gotham City?",
+      "choices": ["Superman", "Batman", "Spider-Man", "Iron Man"],
+      "a": 1,
+      "explanation": "Batman är superhjälten i Gotham City."
+    },
+    {
+      "q": "Vem sjöng 'Like a Prayer'?",
+      "choices": ["Madonna", "Whitney Houston", "Cher", "Cyndi Lauper"],
+      "a": 0,
+      "explanation": "'Like a Prayer' är en låt av Madonna."
+    },
+    {
+      "q": "Vilket instrument spelar Lisa Simpson?",
+      "choices": ["Saxofon", "Gitarr", "Trumma", "Piano"],
+      "a": 0,
+      "explanation": "Lisa Simpson spelar saxofon."
+    }
+  ],
+  "Vetenskap": [
+    {
+      "q": "Vilket djur är störst i världen?",
+      "choices": ["Elefant", "Blåval", "Giraff", "Isbjörn"],
+      "a": 1,
+      "explanation": "Blåvalen är världens största djur."
+    },
+    {
+      "q": "Vad kallas små planeter som kretsar runt solen?",
+      "choices": ["Stjärnor", "Meteoriter", "Asteroid", "Kometer"],
+      "a": 2,
+      "explanation": "Asteroid är små planeter som kretsar runt solen."
+    },
+    {
+      "q": "Vilket ämne behöver växter för att överleva?",
+      "choices": ["Vatten", "Salt", "Socker", "Kaffe"],
+      "a": 0,
+      "explanation": "Växter behöver vatten för att överleva."
+    },
+    {
+      "q": "Vad kallas djupet i havet?",
+      "choices": ["Topp", "Botten", "Hav", "Ocean"],
+      "a": 1,
+      "explanation": "Havets djup kallas botten."
+    },
+    {
+      "q": "Vilket djur kan byta färg?",
+      "choices": ["Kameleont", "Lejon", "Tiger", "Björn"],
+      "a": 0,
+      "explanation": "Kameleonten kan byta färg."
+    },
+    {
+      "q": "Vad kallas ljusets hastighet?",
+      "choices": ["Långsam", "Snabb", "Rask", "Raskt"],
+      "a": 1,
+      "explanation": "Ljusets hastighet är mycket snabb."
+    },
+    {
+      "q": "Vilket djur sover upprätt?",
+      "choices": ["Fladdermus", "Panda", "Koala", "Isbjörn"],
+      "a": 0,
+      "explanation": "Fladdermöss sover upprätt."
+    },
+    {
+      "q": "Vad kallas en liten vattenpöl?",
+      "choices": ["Sjö", "Hav", "Pöl", "Flod"],
+      "a": 2,
+      "explanation": "En liten vattenpöl kallas pöl."
+    },
+    {
+      "q": "Vilket djur har lång hals?",
+      "choices": ["Giraff", "Elefant", "Lejon", "Tiger"],
+      "a": 0,
+      "explanation": "Giraffen har världens längsta hals."
+    },
+    {
+      "q": "Vad kallas ett djur som äter kött?",
+      "choices": ["Växtätare", "Köttätare", "Allätare", "Insektätare"],
+      "a": 1,
+      "explanation": "Köttätare äter kött."
+    },
+    {
+      "q": "Vilket djur kan leva i vatten och på land?",
+      "choices": ["Fisk", "Groda", "Fågel", "Orm"],
+      "a": 1,
+      "explanation": "Groddjur kan leva i både vatten och på land."
+    },
+    {
+      "q": "Vad kallas en liten sten?",
+      "choices": ["Berg", "Sten", "Gruss", "Klippa"],
+      "a": 2,
+      "explanation": "En liten sten kallas grus."
+    },
+    {
+      "q": "Vilket djur har vingar?",
+      "choices": ["Fågel", "Fisk", "Orm", "Groda"],
+      "a": 0,
+      "explanation": "Fåglar har vingar."
+    },
+    {
+      "q": "Vad kallas ett djur som sover på dagen?",
+      "choices": ["Nattdjur", "Dagdjur", "Dvala", "Vaken"],
+      "a": 0,
+      "explanation": "Nattdjur sover på dagen."
+    },
+    {
+      "q": "Vilket djur har skal?",
+      "choices": ["Snigel", "Mussla", "Fisk", "Groda"],
+      "a": 1,
+      "explanation": "Musslor har skal."
+    },
+    {
+      "q": "Vad kallas ett djur som äter allt?",
+      "choices": ["Växtätare", "Köttätare", "Allätare", "Insektätare"],
+      "a": 2,
+      "explanation": "Allätare äter både växter och kött."
+    },
+    {
+      "q": "Vilket djur kan simma?",
+      "choices": ["Fisk", "Fågel", "Orm", "Alla dessa"],
+      "a": 3,
+      "explanation": "Fiskar, fåglar och ormar kan alla simma."
+    },
+    {
+      "q": "Vad kallas ett djur som sover om natten?",
+      "choices": ["Nattdjur", "Dagdjur", "Dvala", "Vaken"],
+      "a": 1,
+      "explanation": "Dagdjur sover om natten."
+    },
+    {
+      "q": "Vilket djur har taggar?",
+      "choices": ["Igelkott", "Padda", "Ödla", "Fisk"],
+      "a": 0,
+      "explanation": "Igelkotten har taggar."
+    },
+    {
+      "q": "Vad kallas ett djur som äter insekter?",
+      "choices": ["Växtätare", "Köttätare", "Allätare", "Insektätare"],
+      "a": 3,
+      "explanation": "Insektätare äter insekter."
+    },
+    {
+      "q": "Vilket djur kan hoppa?",
+      "choices": ["Groda", "Fisk", "Orm", "Snigel"],
+      "a": 0,
+      "explanation": "Grodor kan hoppa."
+    },
+    {
+      "q": "Vad kallas ett djur som sover länge?",
+      "choices": ["Dvala", "Vaken", "Aktiv", "Sömnig"],
+      "a": 0,
+      "explanation": "Dvala är en lång sömnperiod."
+    },
+    {
+      "q": "Vilket djur har fjädrar?",
+      "choices": ["Fågel", "Fisk", "Orm", "Groda"],
+      "a": 0,
+      "explanation": "Fåglar har fjädrar."
+    },
+    {
+      "q": "Vad kallas ett djur som äter växter?",
+      "choices": ["Växtätare", "Köttätare", "Allätare", "Insektätare"],
+      "a": 0,
+      "explanation": "Växtätare äter växter."
+    },
+    {
+      "q": "Vilket djur kan flyga?",
+      "choices": ["Fågel", "Fisk", "Orm", "Groda"],
+      "a": 0,
+      "explanation": "Fåglar kan flyga."
+    }
+  ],
+  "Historia": [
+    {
+      "q": "Vilket land upptäckte Amerika?",
+      "choices": ["Spanien", "England", "Portugal", "Italien"],
+      "a": 0,
+      "explanation": "Christofer Columbus upptäckte Amerika för Spanien."
+    },
+    {
+      "q": "Vilket år startade andra världskriget?",
+      "choices": ["1914", "1939", "1945", "1950"],
+      "a": 1,
+      "explanation": "Andra världskriget startade 1939."
+    },
+    {
+      "q": "Vem var Sveriges första kung?",
+      "choices": ["Gustav Vasa", "Karl XII", "Gustav III", "Gustav Adolf"],
+      "a": 0,
+      "explanation": "Gustav Vasa var Sveriges första kung."
+    },
+    {
+      "q": "Vilket land var först i rymden?",
+      "choices": ["USA", "Sovjetunionen", "Kina", "England"],
+      "a": 1,
+      "explanation": "Sovjetunionen skickade upp Sputnik 1957."
+    },
+    {
+      "q": "Vem uppfann bilen?",
+      "choices": [
+        "Henry Ford",
+        "Karl Benz",
+        "Thomas Edison",
+        "Alexander Graham Bell"
+      ],
+      "a": 1,
+      "explanation": "Karl Benz anses ha uppfunnit bilen."
+    },
+    {
+      "q": "Vilket år slutade andra världskriget?",
+      "choices": ["1945", "1939", "1918", "1950"],
+      "a": 0,
+      "explanation": "Andra världskriget slutade 1945."
+    },
+    {
+      "q": "Vem var den första människan i rymden?",
+      "choices": [
+        "Neil Armstrong",
+        "Yuri Gagarin",
+        "John Glenn",
+        "Buzz Aldrin"
+      ],
+      "a": 1,
+      "explanation": "Yuri Gagarin var första människan i rymden 1961."
+    },
+    {
+      "q": "Vilket land byggde pyramiderna?",
+      "choices": ["Grekland", "Egypten", "Italien", "Kina"],
+      "a": 1,
+      "explanation": "Pyramiderna byggdes i forntida Egypten."
+    },
+    {
+      "q": "Vem uppfann glödlampan?",
+      "choices": [
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Albert Einstein",
+        "Isaac Newton"
+      ],
+      "a": 0,
+      "explanation": "Thomas Edison uppfann den praktiska glödlampan."
+    },
+    {
+      "q": "Vilket år föll Berlinmuren?",
+      "choices": ["1985", "1989", "1991", "1995"],
+      "a": 1,
+      "explanation": "Berlinmuren föll 1989."
+    },
+    {
+      "q": "Vem var den första kvinnan i rymden?",
+      "choices": [
+        "Valentina Teresjkova",
+        "Sally Ride",
+        "Mae Jemison",
+        "Eileen Collins"
+      ],
+      "a": 0,
+      "explanation": "Valentina Teresjkova var första kvinnan i rymden 1963."
+    },
+    {
+      "q": "Vilket land upptäckte Australien?",
+      "choices": ["England", "Nederländerna", "Spanien", "Portugal"],
+      "a": 1,
+      "explanation": "Nederländarna upptäckte Australien på 1600-talet."
+    },
+    {
+      "q": "Vem var den första människan på månen?",
+      "choices": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Michael Collins",
+        "John Glenn"
+      ],
+      "a": 0,
+      "explanation": "Neil Armstrong var första människan på månen 1969."
+    },
+    {
+      "q": "Vilket år startade första världskriget?",
+      "choices": ["1914", "1918", "1939", "1945"],
+      "a": 0,
+      "explanation": "Första världskriget startade 1914."
+    },
+    {
+      "q": "Vem uppfann telefonen?",
+      "choices": [
+        "Alexander Graham Bell",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Guglielmo Marconi"
+      ],
+      "a": 0,
+      "explanation": "Alexander Graham Bell uppfann telefonen."
+    },
+    {
+      "q": "Vilket land var först med att ha kvinnlig rösträtt?",
+      "choices": ["Sverige", "Norge", "Nya Zeeland", "USA"],
+      "a": 2,
+      "explanation": "Nya Zeeland var först med kvinnlig rösträtt 1893."
+    },
+    {
+      "q": "Vem var den första svenska kungen?",
+      "choices": [
+        "Gustav Vasa",
+        "Magnus Ladulås",
+        "Birger Jarl",
+        "Erik den helige"
+      ],
+      "a": 0,
+      "explanation": "Gustav Vasa var Sveriges första kung från 1523."
+    },
+    {
+      "q": "Vilket år grundades USA?",
+      "choices": ["1492", "1776", "1789", "1812"],
+      "a": 1,
+      "explanation": "USA grundades 1776 med självständighetsförklaringen."
+    },
+    {
+      "q": "Vem uppfann tryckpressen?",
+      "choices": [
+        "Johannes Gutenberg",
+        "Leonardo da Vinci",
+        "Galileo Galilei",
+        "Isaac Newton"
+      ],
+      "a": 0,
+      "explanation": "Johannes Gutenberg uppfann tryckpressen på 1400-talet."
+    },
+    {
+      "q": "Vilket land var först med att avskaffa slaveriet?",
+      "choices": ["USA", "England", "Sverige", "Danmark"],
+      "a": 3,
+      "explanation": "Danmark var först att förbjuda slavhandeln 1792."
+    },
+    {
+      "q": "Vem var den första kvinnliga nobelpristagaren?",
+      "choices": [
+        "Marie Curie",
+        "Rosalind Franklin",
+        "Dorothy Hodgkin",
+        "Maria Goeppert-Mayer"
+      ],
+      "a": 0,
+      "explanation": "Marie Curie var första kvinnliga nobelpristagaren 1903."
+    },
+    {
+      "q": "Vilket år slutade första världskriget?",
+      "choices": ["1914", "1918", "1920", "1939"],
+      "a": 1,
+      "explanation": "Första världskriget slutade 1918."
+    },
+    {
+      "q": "Vem upptäckte penicillinet?",
+      "choices": [
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Robert Koch",
+        "Paul Ehrlich"
+      ],
+      "a": 0,
+      "explanation": "Alexander Fleming upptäckte penicillinet 1928."
+    },
+    {
+      "q": "Vilket land var först med att skicka en människa till månen?",
+      "choices": ["Sovjetunionen", "USA", "Kina", "Europa"],
+      "a": 1,
+      "explanation": "USA skickade första människan till månen 1969."
+    },
+    {
+      "q": "Vem var den första afroamerikanska presidenten i USA?",
+      "choices": [
+        "Barack Obama",
+        "Martin Luther King",
+        "Malcolm X",
+        "Rosa Parks"
+      ],
+      "a": 0,
+      "explanation": "Barack Obama var USA:s första afroamerikanska president."
+    }
+  ],
+  "Sverige": [
+    {
+      "q": "Vilket är Sveriges huvudstad?",
+      "choices": ["Göteborg", "Malmö", "Stockholm", "Uppsala"],
+      "a": 2,
+      "explanation": "Stockholm är Sveriges huvudstad."
+    },
+    {
+      "q": "Vilket är Sveriges nationalspråk?",
+      "choices": ["Norska", "Danska", "Svenska", "Finska"],
+      "a": 2,
+      "explanation": "Svenska är Sveriges officiella språk."
+    },
+    {
+      "q": "Vilket är Sveriges största sjö?",
+      "choices": ["Vänern", "Vättern", "Mälaren", "Hjälmaren"],
+      "a": 0,
+      "explanation": "Vänern är Sveriges största sjö."
+    },
+    {
+      "q": "Vilket land gränsar till Sverige i väst?",
+      "choices": ["Danmark", "Finland", "Norge", "Tyskland"],
+      "a": 2,
+      "explanation": "Norge gränsar till Sverige i väst."
+    },
+    {
+      "q": "Vilket är Sveriges nationaldag?",
+      "choices": ["6 juni", "1 maj", "24 december", "13 december"],
+      "a": 0,
+      "explanation": "Sveriges nationaldag firas 6 juni."
+    },
+    {
+      "q": "Vilket är Sveriges valuta?",
+      "choices": ["Euro", "Dollar", "Krona", "Pund"],
+      "a": 2,
+      "explanation": "Sverige använder svensk krona."
+    },
+    {
+      "q": "Vilket är Sveriges största ö?",
+      "choices": ["Gotland", "Öland", "Orust", "Tjörn"],
+      "a": 0,
+      "explanation": "Gotland är Sveriges största ö."
+    },
+    {
+      "q": "Vilket land gränsar till Sverige i öst?",
+      "choices": ["Danmark", "Finland", "Norge", "Ryssland"],
+      "a": 1,
+      "explanation": "Finland gränsar till Sverige i öst/nordost."
+    },
+    {
+      "q": "Vilket är Sveriges högsta berg?",
+      "choices": ["Kebnekaise", "Sarektjåkkå", "Akka", "Helags"],
+      "a": 0,
+      "explanation": "Kebnekaise är Sveriges högsta berg."
+    },
+    {
+      "q": "Vilket är Sveriges största stad?",
+      "choices": ["Göteborg", "Malmö", "Stockholm", "Uppsala"],
+      "a": 2,
+      "explanation": "Stockholm är störst i invånare."
+    },
+    {
+      "q": "Vilket är Sveriges flaggas färger?",
+      "choices": ["Röd och vit", "Blå och gul", "Grön och vit", "Röd och gul"],
+      "a": 1,
+      "explanation": "Sveriges flagga är blå med gult kors."
+    },
+    {
+      "q": "Vilket är Sveriges nationaldjur?",
+      "choices": ["Älg", "Varg", "Kronhjort", "Brunbjörn"],
+      "a": 0,
+      "explanation": "Älgen är Sveriges nationaldjur."
+    },
+    {
+      "q": "Vilket är Sveriges största län?",
+      "choices": ["Norrbotten", "Västerbotten", "Dalarna", "Jämtland"],
+      "a": 0,
+      "explanation": "Norrbottens län är störst i yta."
+    },
+    {
+      "q": "Vilket är Sveriges mest populära efterrätt?",
+      "choices": ["Kladdkaka", "Prinsesstårta", "Semla", "Pannkakor"],
+      "a": 1,
+      "explanation": "Prinsesstårta är mycket populär i Sverige."
+    },
+    {
+      "q": "Vilket är Sveriges nationalblomma?",
+      "choices": ["Tulpan", "Prästkrage", "Masksros", "Linnea"],
+      "a": 3,
+      "explanation": "Linnea är Sveriges nationalblomma."
+    },
+    {
+      "q": "Vilket är Sveriges största flygplats?",
+      "choices": [
+        "Göteborg Landvetter",
+        "Stockholm Arlanda",
+        "Malmö Sturup",
+        "Luleå"
+      ],
+      "a": 1,
+      "explanation": "Arlanda är Sveriges största flygplats."
+    },
+    {
+      "q": "Vilket är Sveriges nationaldräkt?",
+      "choices": [
+        "Sverigedräkten",
+        "Folkdräkt",
+        "Söndagskostym",
+        "Nationaldräkt"
+      ],
+      "a": 0,
+      "explanation": "Sverigedräkten är den officiella nationaldräkten."
+    },
+    {
+      "q": "Vilket är Sveriges största universitet?",
+      "choices": [
+        "Lunds universitet",
+        "Uppsala universitet",
+        "Stockholms universitet",
+        "Göteborgs universitet"
+      ],
+      "a": 1,
+      "explanation": "Uppsala universitet är äldst och bland de största."
+    },
+    {
+      "q": "Vilket är Sveriges nationalpark?",
+      "choices": [
+        "Abisko",
+        "Sarek",
+        "Tyresta",
+        "Sverige har många nationalparker"
+      ],
+      "a": 3,
+      "explanation": "Sverige har 30 nationalparker."
+    },
+    {
+      "q": "Vilket är Sveriges mest sålda bilmärke?",
+      "choices": ["Volvo", "Saab", "Volkswagen", "Toyota"],
+      "a": 0,
+      "explanation": "Volvo är svenskt och populärt."
+    },
+    {
+      "q": "Vilket är Sveriges nationalrätt?",
+      "choices": [
+        "Köttbullar",
+        "Pytt i panna",
+        "Surströmming",
+        "Sverige har ingen officiell nationalrätt"
+      ],
+      "a": 3,
+      "explanation": "Sverige har ingen officiell nationalrätt."
+    },
+    {
+      "q": "Vilket är Sveriges största shoppingcenter?",
+      "choices": ["Mall of Scandinavia", "Nordstan", "Emporia", "Täby Centrum"],
+      "a": 0,
+      "explanation": "Mall of Scandinavia är störst i yta."
+    },
+    {
+      "q": "Vilket är Sveriges nationalinstrument?",
+      "choices": ["Fiol", "Nyckelharpa", "Dragspel", "Trumma"],
+      "a": 1,
+      "explanation": "Nyckelharpan är Sveriges nationalinstrument."
+    },
+    {
+      "q": "Vilket är Sveriges största älv?",
+      "choices": ["Göta älv", "Ångermanälven", "Ume älv", "Klara älv"],
+      "a": 3,
+      "explanation": "Klara älv är längst i Sverige."
+    },
+    {
+      "q": "Vilket är Sveriges nationaldans?",
+      "choices": [
+        "Polska",
+        "Hambo",
+        "Schottis",
+        "Sverige har ingen officiell nationaldans"
+      ],
+      "a": 3,
+      "explanation": "Sverige har ingen officiell nationaldans."
+    }
+  ]
+}
