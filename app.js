@@ -83,6 +83,7 @@ function loadHighScores() {
 /********************  start screen ********************/
 
 async function renderStartPage() {
+  state.timerEnabled = false;
   await loadDB();
   loadHighScores();
   app.innerHTML = `
@@ -111,9 +112,9 @@ async function renderStartPage() {
                 <div> 
                   <input type="checkbox" name="checkbox" id="checkbox" />
                   <label for="checkbox"
-                    > Aktivera timer per fråga</label>
+                    > Aktivera timer per fråga (5-120 sekunder)</label>
                 </div>
-                <input id="timesec" type="number" min="10" max="120" name="timesec"
+                <input id="timesec" type="number" min="5" max="120" name="timesec"
                 placeholder="Tidsgräns i sekunder" value="20"
                 />
               </div>
@@ -145,8 +146,10 @@ async function renderStartPage() {
                               .map(
                                 (s, i) => `
                                 <li>
-                                  <span class="rank">#${i + 1}</span>
-                                  <span class="user">${s.user}</span>
+                                <div>
+                                <span class="rank">#${i + 1}</span>
+                                <span class="user">${s.user}</span>
+                                </div>
                                   <span class="user-score">${s.score}</span>
                                 </li>
                               `
@@ -176,17 +179,23 @@ async function renderStartPage() {
 
   const startQuizBtn = document.getElementById("start-quiz");
   startQuizBtn.addEventListener("click", () => {
-      const categorySelect = document.getElementById("catigoryselct").value;
-      state.category = categorySelect;
-      let qcount = parseInt(document.getElementById("frågorantal").value) || 5;
-      const timerEnabled = document.getElementById("checkbox").checked;
-      const username = document.getElementById("username").value || "Anonim";
+    const categorySelect = document.getElementById("catigoryselct").value;
+    state.category = categorySelect;
+    let qcount = parseInt(document.getElementById("frågorantal").value) || 5;
+    const timerEnabled = document.getElementById("checkbox").checked;
+    const username = document.getElementById("username").value || "Anonim";
 
-      let sec =
-        parseInt(document.getElementById("timesec").value) ||
-        state.perQuestionTime;
-      qcount = Math.max(1, Math.min(qcount, DB[categorySelect].length));
-      startQuiz({ category: categorySelect, qcount, timerEnabled, sec, username });
+    let sec =
+      parseInt(document.getElementById("timesec").value) ||
+      state.perQuestionTime;
+    qcount = Math.max(1, Math.min(qcount, DB[categorySelect].length));
+    startQuiz({
+      category: categorySelect,
+      qcount,
+      timerEnabled,
+      sec,
+      username,
+    });
   });
 }
 
@@ -203,7 +212,7 @@ function startQuiz({ category, qcount, timerEnabled, sec, username }) {
   state.currentIndex = 0;
   state.score = 0;
   state.timerEnabled = !!timerEnabled;
-  state.perQuestionTime = Math.max(5, Math.min(60, parseInt(sec) || 12));
+  state.perQuestionTime = Math.max(5, Math.min(120, parseInt(sec) || 20));
   state.timeLeft = state.perQuestionTime;
   state.allowInput = true;
   renderQuestion();
@@ -217,13 +226,18 @@ function renderQuestion() {
   if (i >= total) return renderResult();
 
   // progress percent
-  const percent = Math.round((i / total) * 100);
 
-  const item = state.questions[i];
   const q = state.questions[state.currentIndex];
 
   app.innerHTML = `<div class="fråga-container">
         <section class="faq-section">
+        ${
+          state.timerEnabled
+            ? `<div id="progressBarContainer">
+  <div id="progressBar"></div>
+</div>`
+            : ""
+        }
           <div class="faq-item">
             <h2>Fråga ${state.currentIndex + 1}
             av ${state.questions.length}</h2>
@@ -250,13 +264,21 @@ function renderQuestion() {
   document.getElementById("quitBtn").addEventListener("click", () => {
     if (confirm("Avbryt quizen och återgå till startsidan?")) renderStartPage();
   });
-
+  const progressBar = document.getElementById("progressBar");
   if (state.timerEnabled) {
     state.timeLeft = state.perQuestionTime;
     updateTimerDisplay();
     state.timerId = setInterval(() => {
       state.timeLeft--;
       updateTimerDisplay();
+
+      const percentLeft = ((state.timeLeft - 1) / state.perQuestionTime) * 100;
+      progressBar.style.width = percentLeft + "%";
+
+      // ändra färgen på progressbaren
+      const hue = percentLeft * 1.2; // 0 = red, 120 = green
+      progressBar.style.backgroundColor = `hsl(${hue}, 100%, 40%)`;
+
       if (state.timeLeft <= 0) {
         clearTimer();
         // treat as wrong and move on
@@ -270,17 +292,17 @@ function renderQuestion() {
 
 function checkAnswer(selectedIndex) {
   console.log(selectedIndex);
-  //if (!state.allowInput) return; // منع النقرات المتكررة
+  //if (!state.allowInput) return; // förhindra flera klick
   state.allowInput = false;
   clearTimer();
-  
+
   const q = state.questions[state.currentIndex];
   const options = document.querySelectorAll(".frågor-sec");
-  
-  // تعطيل كل الإجابات مؤقتًا
+
+  // inaktivera alla alternativ
   options.forEach((opt) => opt.classList.add("disabled"));
-  
-  // لو ضغط المستخدم على إجابة
+
+  // om användaren klickar på ett alternativ
   if (selectedIndex !== null) {
     const selectedOption = options[selectedIndex];
     if (selectedIndex === q.a) {
@@ -288,15 +310,15 @@ function checkAnswer(selectedIndex) {
       state.score++;
     } else {
       selectedOption.classList.add("wrong");
-      // أظهر الجواب الصحيح أيضًا
+      // visa rätt svar också
       options[q.a].classList.add("correct");
     }
   } else {
-    // في حالة انتهاء الوقت بدون اختيار
+    // om ingen svar valdes, gå till rätt svar
     options[q.a].classList.add("correct");
   }
-  
-  // الانتقال بعد فترة قصيرة
+
+  // gå till nästa fråga efter en korta pausa
   setTimeout(() => {
     state.currentIndex++;
     state.allowInput = false;
@@ -319,7 +341,7 @@ function renderResult() {
           <section class="result-section">
               <div class="resultat">
                   <h3>Resultatet!</h3>
-                  <h4 class="username"> ${state.username}</h4>
+                  <h4 class="username">Hej ${state.username}</h4>
                   <h5 class="point">Du får: <span> ${state.score} av ${
     state.questions.length
   } </span></h5>
@@ -329,7 +351,7 @@ function renderResult() {
           ${state.questions
             .map(
               (qq, idx) => `
-            <li>
+            <li class="correct-list-item">
               <div><strong>Fråga ${idx + 1}:</strong> ${qq.q}</div>
               <div style="margin-top:6px;color:${
                 qq.a === state.questions[idx].a ? "" : "inherit"
@@ -338,7 +360,7 @@ function renderResult() {
               </div>
               ${
                 qq.explanation
-                  ? `<div class="muted" style="margin-top:6px">${qq.explanation}</div>`
+                  ? `<div class="muted expanation" style="margin-top:6px">${qq.explanation}</div>`
                   : ""
               }
             </li>
@@ -366,14 +388,15 @@ function renderResult() {
   });
 }
 
-// DOM on loadpage
-const app = document.getElementById("app");
-window.onload = () => {
-  renderStartPage();
-};
+
 
 /********************** Init **********************/
 document.addEventListener("DOMContentLoaded", () => {
   loadHighScores();
   renderStartPage();
+});
+
+
+document.getElementById("colorPicker").addEventListener("input", (e) => {
+  document.documentElement.style.setProperty("--primary", e.target.value);
 });
