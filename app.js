@@ -8,6 +8,7 @@ async function loadDB() {
     console.error("Fel vid laddning av JSON:", error);
   }
 }
+
 /***********************   STATE   **********************/
 let state = {
   category: "",
@@ -59,7 +60,7 @@ function toggleTimer() {
 
 /************   LocalStorage   ***********/
 function saveHighScores(cat, user, score) {
-  if (!user || user.trim() === "" || user === "Anonim") return;
+  if (!user || user.trim() === "" || user === "Guess") return;
   const highScores = state.highScores.find((h) => h.category === cat);
   if (highScores) {
     highScores.score.push({ user, score });
@@ -183,7 +184,7 @@ async function renderStartPage() {
     state.category = categorySelect;
     let qcount = parseInt(document.getElementById("frågorantal").value) || 5;
     const timerEnabled = document.getElementById("checkbox").checked;
-    const username = document.getElementById("username").value || "Anonim";
+    const username = document.getElementById("username").value || "Guess";
 
     let sec =
       parseInt(document.getElementById("timesec").value) ||
